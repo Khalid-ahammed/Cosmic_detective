@@ -1,0 +1,93 @@
+* {
+  cursor: none;
+}
+
+.main-cursor {
+  z-index: 1000;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 30px solid var(--white-color);
+  border-bottom: 10px solid transparent;
+  /* background-color: var(--white-color); */
+  pointer-events: none;
+  overflow: hidden;
+  transform: rotate(70deg) translate3d(0, 0, 0);
+  position: fixed;
+  transition: opacity 1s cubic-bezier(0.77, 0, 0.175, 1);
+  animation: fadeIn 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+}
+.secondary-cursor {
+  z-index: 1000;
+  /* border-radius: 50%; */
+  width: 80px;
+  height: 80px;
+  /* border: 2px solid var(--white-color); */
+  pointer-events: none;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+}
+.secondary-cursor img {
+  width: 100%;
+  height: 100%;
+}
+
+.scroll .main-cursor {
+  /* background-color: ; */
+  background-image: url('../../public/images/scroll-roc.png');
+  border-color: rgba(0, 0, 0, 0.6);
+  animation: rotateDown 0.5s ease 0s forwards;
+}
+
+.menuC .secondary-cursor {
+  animation: fadeOut 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+}
+.menuC .main-cursor {
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: scaleUp 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+}
+
+@keyframes rotateDown {
+  from {
+    border-top: 10px solid transparent;
+    border-right: 20px solid rgba(0, 0, 0, 0.6);
+    border-bottom: 10px solid transparent;
+  }
+  to {
+    border-top: 20px solid transparent;
+    border-right: 40px solid rgba(0, 0, 0, 0.6);
+    border-bottom: 20px solid transparent;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    /* transform: scale(1); */
+    width: 40px;
+    height: 40px;
+  }
+  to {
+    /* transform: scale(1.5); */
+    width: 60px;
+    height: 60px;
+  }
+}
