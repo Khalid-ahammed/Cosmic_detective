@@ -161,7 +161,7 @@
 @media screen and (max-width: 490px) {
   .title-stroke {
     font-size: 6.3rem;
-    transform: translateX(0%);
+    transform: translateX(5%);
     line-height: 8rem;
   }
   .main-title {
@@ -169,6 +169,6 @@
   }
   .title-solid {
     font-size: 3rem;
-    transform: translateX(10%);
+    transform: translateX(15%);
   }
 }
