@@ -95,7 +95,7 @@ const CustomCursor = () => {
 
   return (
     <div className={`${type}`}>
-      {!isMob ? <div className='main-cursor' ref={cursorRef}></div> : null}
+      <div className='main-cursor' ref={cursorRef}></div>
 
       <div className='secondary-cursor' ref={secondaryCursor}>
         <img src='/images/sec_cursor.png' alt='cursor' />
