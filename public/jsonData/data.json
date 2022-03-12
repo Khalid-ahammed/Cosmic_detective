@@ -1,0 +1,37 @@
+[
+  {
+    "title": "galaxy",
+    "name": "galaxy",
+    "image": "/images/objects/galaxy.jpg",
+    "types": 4,
+    "desc": "A galaxy is a huge collection of gas, dust, and billions of stars and their solar systems, all held together by gravity. scientists think there could be as many as one hundred billion galaxies in the universe."
+  },
+  {
+    "title": "nebula",
+    "name": "nebula",
+    "image": "/images/objects/nebula.jpg",
+    "types": 3,
+    "desc": "A nebula is a giant cloud of dust and gas in space. Some nebulae (more than one nebula) come from the gas and dust thrown out by the explosion of a dying star, such as a supernova. Other nebulae are regions where new stars are beginning to form."
+  },
+  {
+    "title": "Black Hole",
+    "name": "blackHole",
+    "image": "/images/objects/blackHole.jpg",
+    "types": 5,
+    "desc": "A black hole is a region of spacetime where gravity is so strong that nothing — no particles or even electromagnetic radiation such as light — can escape from it. The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole."
+  },
+  {
+    "title": "Star",
+    "name": "star",
+    "image": "/images/objects/star.jpg",
+    "types": 5,
+    "desc": "A star is an astronomical object comprising a luminous spheroid of plasma held together by its gravity. The nearest star to Earth is the Sun. Many other stars are visible to the naked eye at night, but their immense distance from Earth makes them appear as fixed points of light in the sky."
+  },
+  {
+    "title": "Supernova",
+    "name": "Supernova",
+    "image": "/images/objects/supernova.jpg",
+    "types": 5,
+    "desc": "A supernova is the biggest explosion that humans have ever seen. Each blast is the extremely bright, super-powerful explosion of a star. One type of supernova is caused by the “last hurrah” of a dying massive star. This happens when a star at least five times the mass of our sun goes out with a fantastic bang!"
+  }
+]

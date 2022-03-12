@@ -1,0 +1,28 @@
+.pageBanner-con {
+  height: 50vh;
+  min-height: 400px;
+  position: relative;
+  background: url(../../public/images/banner.jpg);
+  background-size: cover;
+  background-origin: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.pageBanner-title {
+  position: absolute;
+  z-index: 2;
+  font-size: 6rem;
+
+  top: 70%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  font-family: 'Russo One', sans-serif;
+}
+
+.pageBanner-title .formatted-title {
+  font-size: 6rem;
+  letter-spacing: 6px;
+  -webkit-text-stroke-color: var(--highlight-color);
+  color: var(--main-trans-color);
+}

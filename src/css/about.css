@@ -1,0 +1,11 @@
+.about-body {
+  max-width: 1175px;
+  width: 100%;
+  padding: 10%;
+  min-height: 60vh !important;
+}
+.about-body p {
+  font-size: 1.3rem;
+  letter-spacing: 1.4px;
+  word-spacing: 3px;
+}

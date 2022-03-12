@@ -15,7 +15,7 @@ const CustomCursor = () => {
   })
   const secondaryCursor = React.useRef(null)
   const { type } = ContextConsumer()
-  console.log(type)
+  const [isMob, setIsMob] = React.useState(false)
 
   React.useEffect(() => {
     document.addEventListener('mousemove', (e) => {
@@ -76,9 +76,27 @@ const CustomCursor = () => {
     followMouse()
   }, [])
 
+  const handleCursor = () => {
+    if (window.innerWidth <= 667) {
+      setIsMob(true)
+    }
+    if (window.innerWidth > 667) {
+      setIsMob(false)
+    }
+  }
+
+  React.useEffect(() => {
+    if (window.innerWidth <= 667) {
+      setIsMob(true)
+    }
+    window.addEventListener('resize', handleCursor)
+    return () => window.removeEventListener('resize', handleCursor)
+  }, [])
+
   return (
     <div className={`${type}`}>
-      <div className='main-cursor' ref={cursorRef}></div>
+      {!isMob ? <div className='main-cursor' ref={cursorRef}></div> : null}
+
       <div className='secondary-cursor' ref={secondaryCursor}>
         <img src='/images/sec_cursor.png' alt='cursor' />
       </div>

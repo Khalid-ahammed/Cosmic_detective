@@ -11,6 +11,7 @@
 html {
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* variables */
@@ -18,6 +19,8 @@ html {
   --main-color: #110031;
   --secondary-color: #3d2f60;
   --highlight-color: #39dec0;
+  --secondary-trans-color: rgba(60, 47, 96, 0.938);
+  --main-trans-color: #110031da;
   --white-color: #f8ebff;
   --main-font: 'Titillium Web', sans-serif;
   --transition-type: cubic-bezier(0.77, 0, 0.175, 1);
@@ -28,6 +31,24 @@ html {
   --lg-header: 3rem;
   --small-header: 1.3rem;
   --tranparent-wrapper: rgba(189, 189, 189, 0.3);
+}
+
+/* custom scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--tranparent-wrapper);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 10px;
 }
 
 /* global tags */
@@ -82,12 +103,35 @@ a {
   font-size: var(--mid-text);
 }
 
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  letter-spacing: 2px;
+}
+
 /* global classes */
 .main {
   background-color: var(--main-color);
   min-height: 100vh;
   max-width: 1175px;
   margin: 0 auto;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-family: 'Russo One', sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+.logo::first-letter {
+  color: var(--highlight-color);
+  font-size: 1.5rem;
+}
+
+.logo-ext {
+  color: var(--highlight-color) !important;
+  font-size: 1.5rem;
 }
 
 .formatted-title {

@@ -2,6 +2,7 @@ import React from 'react'
 import '../css/home.css'
 import { ContextConsumer } from '../ContextApi'
 import Details from '../components/Details'
+import Objects from '../components/Objects'
 
 const Home = () => {
   const { setType, detailsSecPos } = ContextConsumer()
@@ -21,11 +22,11 @@ const Home = () => {
           </div>
           <div className='sub-title'>
             <h3>Explore the mystery of the cosmos</h3>
-            <p className='sub-para'>
+            {/* <p className='sub-para'>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
               libero ratione odio iure culpa. Omnis?Lorem ipsum dolor, sit amet
               consectetur adipisicing elit. Inventore praesentium
-            </p>
+            </p> */}
           </div>
         </div>
         <div className='scroll-down'>
@@ -44,6 +45,7 @@ const Home = () => {
         </div>
       </section>
       <Details />
+      <Objects />
     </>
   )
 }

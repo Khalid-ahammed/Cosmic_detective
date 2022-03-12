@@ -1,0 +1,30 @@
+.error-body img {
+  width: 400px;
+  transform: translate(20%, -10%);
+}
+.error-body {
+  position: relative;
+}
+
+.error-msg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Russo One', sans-serif;
+  font-style: italic;
+  background-color: rgba(189, 189, 189, 0.3);
+  padding: 20px;
+  padding-left: 100px;
+}
+
+.error-msg p {
+  font-size: 3rem;
+}
+.error-msg h3 {
+  transition: var(--transition);
+}
+.error-msg h3:hover {
+  transform: translateX(10px);
+  text-decoration: underline;
+}

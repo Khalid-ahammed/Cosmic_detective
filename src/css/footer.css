@@ -1,0 +1,214 @@
+.footer {
+  min-height: 400px;
+  background: url(../../public/images/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  z-index: 1;
+  position: relative;
+  max-width: 1175px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr;
+}
+
+/* .footer::after {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  content: '';
+} */
+
+.contact {
+  background-color: var(--secondary-trans-color);
+  height: 105%;
+  padding: 20px;
+  transform: translate(0, -5%);
+}
+.contact-head {
+  display: block;
+  width: 100%;
+  min-height: 20px;
+  position: relative;
+}
+.contact .formatted-title {
+  font-size: 3rem;
+  transform: translate(20%, -80%);
+}
+
+.newsLetter {
+  max-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--tranparent-wrapper);
+  margin: -10px 0 0 40px;
+  overflow: hidden;
+}
+.newsLetter h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  padding: 10px;
+}
+.newsLetter img {
+  width: 80%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--highlight-color);
+  border-left: 1px solid var(--highlight-color);
+  padding: 40px 10px 10px 40px;
+  width: fit-content;
+  margin: 0 auto;
+  transform: translate(50%, -20%);
+}
+
+.contact-form input {
+  background-color: transparent;
+  border: 2px solid var(--highlight-color);
+  font-size: 1.1rem;
+  max-width: 250px;
+  width: 100%;
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  outline: none;
+  color: var(--white-color);
+  letter-spacing: 1.8px;
+  opacity: 0.7;
+  font-weight: lighter;
+  transition: var(--transition);
+}
+.contact-form input::placeholder {
+  color: var(--white-color);
+  opacity: 0.4;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.contact-form input:focus {
+  transform: scale(1.01);
+}
+
+.contact-form button {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: var(--highlight-color);
+  width: min-content;
+  padding: 10px;
+  transition: 0.5s ease all;
+}
+.contact-form button:hover {
+  background-color: transparent;
+  color: var(--highlight-color);
+  border: 1px solid var(--highlight-color);
+}
+
+.main-footer {
+  background-color: var(--main-trans-color);
+  padding: 30px;
+  padding-left: 50px;
+}
+
+.main-footer .logo {
+  font-size: 1.7rem;
+  letter-spacing: 4px;
+  margin-bottom: 8px;
+}
+
+.main-footer .logo::first-letter {
+  font-size: 1.9rem;
+}
+
+.main-footer .logo-ext {
+  font-size: 1.9rem;
+}
+
+.footer-logo p {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.social-links {
+  margin-top: 100px;
+}
+.social-links h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.social-links h3 span {
+  position: relative;
+}
+.social-links h3 span::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 100%;
+  background-color: var(--tranparent-wrapper);
+  height: 100%;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  padding: 20px;
+  column-gap: 15px;
+}
+
+.s-icon {
+  font-size: 2rem;
+  color: var(--white-color);
+  opacity: 0.7;
+  transition: var(--transition);
+  background-color: transparent;
+}
+.s-icon:hover {
+  font-size: 2.05rem;
+  color: var(--highlight-color);
+  transform: translateZ(-20%);
+}
+
+.dev-info {
+  margin-top: 30px;
+  letter-spacing: 1.4px;
+  font-size: 1rem;
+}
+
+.dev-info a {
+  opacity: 1;
+}
+.dev-info a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-form {
+    transform: translate(15%, -5%);
+  }
+}
+@media screen and (max-width: 850px) {
+  .contact .formatted-title {
+    transform: translate(10%, -80%);
+  }
+}
+@media screen and (max-width: 799px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  .main-footer {
+    margin-top: -5px;
+  }
+}
