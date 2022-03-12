@@ -42,6 +42,10 @@ const Navbar = () => {
   }
 
   useEffect(() => {
+    handleNavClose()
+  }, [location.pathname])
+  
+  useEffect(() => {
     if (window.innerWidth < 667) {
       setIsMobile(true)
     }
