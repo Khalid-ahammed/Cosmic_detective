@@ -160,7 +160,7 @@
 
 @media screen and (max-width: 490px) {
   .title-stroke {
-    font-size: 7rem;
+    font-size: 6.3rem;
     transform: translateX(0%);
     line-height: 8rem;
   }
@@ -168,7 +168,7 @@
     left: 25%;
   }
   .title-solid {
-    font-size: 3.5rem;
+    font-size: 3rem;
     transform: translateX(10%);
   }
 }
