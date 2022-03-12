@@ -2,11 +2,11 @@
   cursor: none;
 }
 
-@media screen and (max-width: 667px) {
+/* @media screen and (max-width: 667px) {
   * {
     cursor: initial;
   }
-}
+} */
 .main-cursor {
   z-index: 1000;
   width: 0;
