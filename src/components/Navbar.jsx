@@ -93,7 +93,6 @@ const Navbar = () => {
                         ? ' menu-active'
                         : ''
                     }`}
-                    onClick={handleNavClose}
                   >
                     {menuItem.title}
                   </Link>
